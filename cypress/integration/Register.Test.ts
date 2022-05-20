@@ -30,10 +30,7 @@ describe("test for registration", () => {
       cy.selectBtn(elementJson.birthMonth, userJson.bMonth); // birth month
       cy.selectBtn(elementJson.birthDate, userJson.bDate); // birth date
       cy.enterText(elementJson.registerPassword, userJson.passwordreg); //enter password
-      cy.enterText(
-        elementJson.registerPasswordconfirm,
-        userJson.passwordregconfirm
-      ); //enter confirm password
+      cy.enterText(elementJson.registerPasswordconfirm,userJson.passwordregconfirm); //enter confirm password
       cy.clickBtn(elementJson.selectFile).selectFile(userJson.file); // select file
       cy.clickBtn(elementJson.submitBtn); //submit form
     });

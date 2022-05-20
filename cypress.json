@@ -1,4 +1,4 @@
 {
-    "baseUrl":"http://demo.automationtesting.in",
-"watchForFileChanges":false
+    "baseUrl": "http://demo.automationtesting.in",
+    "watchForFileChanges": false
 }

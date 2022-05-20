@@ -15,6 +15,8 @@
   "country":"India{enter}",
   "passwordreg":"111222",
   "passwordregconfirm":"111222",
-  "file":"cypress/downloads/dummy_file.doc"
+  "file":"cypress/downloads/dummy_file.doc",
+
+  "widgetAutocomplete":"hello how are you"
 
 }

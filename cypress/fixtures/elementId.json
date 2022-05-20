@@ -24,6 +24,15 @@
     "registerPassword":"#firstpassword",
     "registerPasswordconfirm":"#secondpassword",
     "selectFile":"input[type=file]",
-    "submitBtn":"#submitbtn"
+    "submitBtn":"#submitbtn",
+
+    "accordion":":nth-child(5) > .dropdown-toggle",
+    "accordion1":".open > .dropdown-menu > :nth-child(1) > a",
+
+    "autocomplete":".open > .dropdown-menu > :nth-child(2) > a",
+    "autocomplete1":".ui-autocomplete-multiselect",
+
+    "datePicker":".open > .dropdown-menu > :nth-child(3) > a"
+    
     
 }

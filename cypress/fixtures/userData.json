@@ -1,0 +1,20 @@
+{
+  "emailId":"shivamdesai@123.com",
+  "password":"112233",
+
+  "name":"Shivani",
+  "lastName":"Desai",
+  "address":"Indore, Madhya Pradesh",
+  "email":"shivani@123",
+  "number":"1122334455",
+  "languages":"Arabic",
+  "skillss":"Android",
+  "bYear":"1924",
+  "bMonth":"January",
+  "bDate":"1",
+  "country":"India{enter}",
+  "passwordreg":"111222",
+  "passwordregconfirm":"111222",
+  "file":"cypress/downloads/dummy_file.doc"
+
+}

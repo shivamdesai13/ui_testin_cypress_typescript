@@ -1,0 +1,29 @@
+{
+    
+    "signIn":"#btn1",
+    "loginEmail":":nth-child(2) > .txtbox",
+    "loginPassword":":nth-child(3) > .txtbox",
+    "loginButton":"#enterbtn",
+
+    "skipSignIn":"btn2",
+    "enterName":":nth-child(1) > :nth-child(2) > .form-control",
+    "enterLastName":":nth-child(1) > :nth-child(3) > .form-control",
+    "enterAddress":".col-md-8 > .form-control",
+    "enterEmail":"#eid > .form-control",
+    "mobNo":":nth-child(4) > .col-md-4 > .form-control",
+    "genderF":".col-md-4 > :nth-child(2) > .ng-pristine",
+    "hobby1":"#checkbox1",
+    "hobby2":"#checkbox2",
+    "language":"#msdd",
+    "skills":"#Skills",
+    "selectCountry":".select2-selection",
+    "enterCountry":".select2-search__field",
+    "birthYear":"#yearbox",
+    "birthMonth":":nth-child(11) > :nth-child(3) > .form-control",
+    "birthDate":"#daybox",
+    "registerPassword":"#firstpassword",
+    "registerPasswordconfirm":"#secondpassword",
+    "selectFile":"input[type=file]",
+    "submitBtn":"#submitbtn"
+    
+}

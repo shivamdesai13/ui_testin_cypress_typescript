@@ -6,7 +6,7 @@
     "loginButton":"#enterbtn",
 
     "skipSignIn":"btn2",
-    "enterName":":nth-child(1) > :nth-child(2) > .form-control",
+    "enterName":":nth-child(1) > :nth-child(2) > .form-control", 
     "enterLastName":":nth-child(1) > :nth-child(3) > .form-control",
     "enterAddress":".col-md-8 > .form-control",
     "enterEmail":"#eid > .form-control",
@@ -28,6 +28,10 @@
 
     "accordion":":nth-child(5) > .dropdown-toggle",
     "accordion1":".open > .dropdown-menu > :nth-child(1) > a",
+    "accordionG1":":nth-child(1) > .panel-heading > .panel-title > a > b",
+    "accordionG2":":nth-child(2) > .panel-heading > .panel-title > a > b",
+    "accordionG3":":nth-child(3) > .panel-heading > .panel-title > a > b",
+    "accordionG4":":nth-child(4) > .panel-heading > .panel-title > a > b",
 
     "autocomplete":".open > .dropdown-menu > :nth-child(2) > a",
     "autocomplete1":".ui-autocomplete-multiselect",

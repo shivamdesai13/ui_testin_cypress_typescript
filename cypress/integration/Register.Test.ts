@@ -12,15 +12,23 @@ describe("test for registration", () => {
       });
     });
     it("register test", () => {
+      cy.get("h1").should("contain.text", "Automation Demo Sit")  //check header 
       cy.enterText(elementJson.enterName, userJson.name); //enter name
+      cy.get(elementJson.enterName).should('have.value', 'Shivani') //check first name field text
+     
+
       cy.enterText(elementJson.enterLastName, userJson.lastName); //enter last name
+      cy.get(elementJson.enterLastName).should('have.value', 'Desai') //check first name field text
+
       cy.enterText(elementJson.enterAddress, userJson.address); //enter address
       cy.enterText(elementJson.enterEmail, userJson.email); //email id
       cy.enterText(elementJson.mobNo, userJson.number); //contact number
       cy.clickBtn(elementJson.genderF); //select gender
       cy.clickBtn(elementJson.hobby1); //enter hobbies
       cy.clickBtn(elementJson.language); //click on language field
-      cy.contains(userJson.languages).click(); //enter language
+      cy.wait(3000)
+
+      cy.contains(userJson.languages).click() //enter language
       cy.clickBtn(elementJson.hobby2); //enter hobbies 2
       cy.selectBtn(elementJson.skills, userJson.skillss); //enter skills
       cy.clickBtn(elementJson.selectCountry); //click on select country
@@ -33,6 +41,13 @@ describe("test for registration", () => {
       cy.enterText(elementJson.registerPasswordconfirm,userJson.passwordregconfirm); //enter confirm password
       cy.clickBtn(elementJson.selectFile).selectFile(userJson.file); // select file
       cy.clickBtn(elementJson.submitBtn); //submit form
+      
+      cy.get('#submitbtn').should('contain','Submit') //to check submit button
+
+      cy.get('#submitbtn').invoke('attr','id').should('equal','submitbtn')
+
+      cy.get('#submitbtn').should('contain','Submit').and('have.class','btn btn-primary')
+
     });
   });
   

@@ -44,7 +44,7 @@ describe("test for registration", () => {
       cy.clickBtn(elementJson.selectFile).selectFile(userJson.file); // select file
       cy.clickBtn(elementJson.submitBtn); //submit form
       
-      cy.get('#submitbtn').should('contain','Submit') //to check submit button
+      registerPage.submitButton.should('contain','Submit') //to check submit button
 
       cy.get('#submitbtn').invoke('attr','id').should('equal','submitbtn')
 

@@ -48,7 +48,7 @@ describe("test for widgets", () => {
     cy.clickBtn(".dp1652941800000");
   });
 
-  it.only("Widgets Test: ui slider handle", () => {
+  it("Widgets Test: ui slider handle", () => {
    widgetsPage.openSlider()
     cy.log("slider set to 10%")
       .get(".ui-slider-handle").invoke("attr", "style", "left:10%") // Type-1 for moving slider at 10%

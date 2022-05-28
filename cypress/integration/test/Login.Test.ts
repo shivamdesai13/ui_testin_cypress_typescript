@@ -1,8 +1,10 @@
+import loginPage from "../../page-objects/loginPage";
+
 describe("test for login", () => {
   let elementJson;
   let userJson;
   beforeEach(() => {
-    cy.visit("/"); //to visit website
+    loginPage.openLogin(); //to visit website
 
     cy.fixture("elementId").then(function (data) {
       elementJson = data;

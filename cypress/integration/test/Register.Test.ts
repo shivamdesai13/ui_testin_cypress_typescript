@@ -4,7 +4,7 @@ describe("test for registration", () => {
     let elementJson;
     let userJson;
     beforeEach(() => {
-     registerPage. openRegister() //to visit website
+     registerPage.openRegister() //to visit website
   
       cy.fixture("elementId").then(function (data) {
         elementJson = data;

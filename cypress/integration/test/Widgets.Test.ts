@@ -1,3 +1,5 @@
+import widgetsPage from "../../page-objects/widgetsPage";
+
 describe("test for widgets", () => {
   let elementJson;
   let userJson;
@@ -13,14 +15,14 @@ describe("test for widgets", () => {
     });
   });
 
-  it.only("Widgets Test: Accordion", () => {
-    cy.visit("/Accordion.html"); //to visit on url
+  it("Widgets Test: Accordion", () => {
+    widgetsPage.openAccordion(); //to visit on url
 
     cy.get(elementJson.accordionG1).should("contain.text","Group 1 - Readability"); //to check text contain or not
     cy.get(elementJson.accordionG2).should("contain.text", "Group 2"); //to check text contain or not
     cy.get(elementJson.accordionG3).should("contain.text", "Methhod Chaining"); //to check text contain or not
     cy.get(elementJson.accordionG4).should("contain.text", "Group 4"); //to check text contain or not
-    cy.get(':nth-child(4) > .panel-heading').should('have.css', 'background-color','rgb(76, 174, 234)') //to check background color
+    widgetsPage.panelHeading.should('have.css', 'background-color','rgb(76, 174, 234)') //to check background color
     //cy.get(':nth-child(4) > .panel-heading').should('have.css', 'background-color','rgb(159, 196, 231)') //to check background color
     
 
@@ -33,21 +35,21 @@ describe("test for widgets", () => {
     cy.contains("NTest your web application").should("be.visible"); //to check 'NTest your web application' in page
   });
   it("Widgets Test: AutoComplete", () => {
-    cy.visit("/AutoComplete.html");
+    widgetsPage.openAutoComplete();
     //cy.clickBtn(elementJson.accordion);
     //cy.clickBtn(elementJson.autocomplete);
     cy.enterText(elementJson.autocomplete1, userJson.widgetAutocomplete);
   });
   it("Widgets Test: DatePicker", () => {
-    cy.visit("/Datepicker.html");
+    widgetsPage.openDatePicker();
     //cy.clickBtn(elementJson.accordion)
     // cy.clickBtn(elementJson.datePicker)
     cy.clickBtn("#datepicker2");
     cy.clickBtn(".dp1652941800000");
   });
 
-  it("Widgets Test: ui slider handle", () => {
-    cy.visit("/Slider.html");
+  it.only("Widgets Test: ui slider handle", () => {
+   widgetsPage.openSlider()
     cy.log("slider set to 10%")
       .get(".ui-slider-handle").invoke("attr", "style", "left:10%") // Type-1 for moving slider at 10%
       .wait(2000)
